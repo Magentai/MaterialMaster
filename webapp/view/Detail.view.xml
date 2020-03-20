@@ -1,0 +1,184 @@
+<mvc:View
+	controllerName="materialmaster.MaterialMaster.controller.Detail"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:uxap="sap.uxap" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<uxap:ObjectPageLayout
+		alwaysShowContentHeader="true"
+		useIconTabBar="true">
+			<uxap:headerTitle>
+				<uxap:ObjectPageDynamicHeaderTitle>
+					<uxap:heading>
+						<Title text="Cuprum" level="H1"/>
+					</uxap:heading>
+					<uxap:expandedContent>
+						<Text text="id: 12345"/>
+					</uxap:expandedContent>
+					<uxap:navigationActions>
+						<Button icon="sap-icon://nav-back" press="toBack"/>
+					</uxap:navigationActions>
+				</uxap:ObjectPageDynamicHeaderTitle>
+			</uxap:headerTitle>
+			<uxap:headerContent>
+				<VBox class="sapUiSmallMargin">
+						<f:Form editable="false">
+							<f:toolbar>
+								<Toolbar>
+									<ToolbarSpacer />
+									<Button icon="sap-icon://edit" text="Edit" press="editObject"/>
+									<Button icon="sap-icon://delete" text="Delete" type="Reject" press="deleteObject"/>
+								</Toolbar>
+							</f:toolbar>
+							<f:layout>
+								<f:ColumnLayout/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Material Group">
+											<f:fields>
+												<Text text="Metals"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Article Category">
+											<f:fields>
+												<Text text="312313"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Material type">
+											<f:fields>
+												<Text text="Metal"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Batch Management Required">
+											<f:fields>
+												<Text text="Yes"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Created">
+											<f:fields>
+												<Text text="Ivan, 21.03.2019"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Changed">
+											<f:fields>
+												<Text text="Ivan, 22.03.2019"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+					</f:Form>
+				</VBox>
+			</uxap:headerContent>
+            <uxap:sections>
+            	<uxap:ObjectPageSection title="Measures">
+            		<uxap:subSections>
+					<uxap:ObjectPageSubSection>
+						<uxap:blocks>
+							<Table growing="true" growingThreshold="20">
+								<columns>
+									<Column hAlign="End">
+										<Text text="Name"/>
+									</Column>
+									<Column hAlign="Begin" >
+										<Text text="Info"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="123" wrapping="false"/>
+											<Text text="123" wrapping="false"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+						</uxap:ObjectPageSection>
+						<uxap:ObjectPageSection title="Plants">
+							<uxap:subSections>
+					<uxap:ObjectPageSubSection>
+						<uxap:blocks>
+							<Table>
+								<columns>
+									<Column mergeDuplicates="true">
+										<header>
+											<Text text="Plant" />
+										</header>
+									</Column>
+									<Column mergeDuplicates="true">
+										<header>
+											<Text text="Purchasing Group" />
+										</header>
+									</Column>
+									<Column mergeDuplicates="true">
+										<header>
+											<Text text="Stock" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Location" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Bin" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Profit Center" />
+										</header>
+									</Column>
+									<Column>
+										<header>
+											<Text text="Stock" />
+										</header>
+									</Column>
+								</columns>
+								<ColumnListItem>
+									<Text text="123" />
+									<Text text="123" />
+									<Text text="123" />
+									<Text text="123" />
+									<Text text="123" />
+									<Text text="123" />
+									<Text text="123" />
+								</ColumnListItem>
+							</Table>
+							
+							</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+						</uxap:ObjectPageSection>
+						<uxap:ObjectPageSection title="Texts">
+							<uxap:subSections>
+					<uxap:ObjectPageSubSection>
+						<uxap:blocks>
+							<Table>
+								<columns>
+									<Column hAlign="End">
+										<Text text="Language"/>
+									</Column>
+									<Column hAlign="Begin" >
+										<Text text="Text"/>
+									</Column>
+								</columns>
+								<items>
+									<ColumnListItem>
+										<cells>
+											<Text text="123" wrapping="false"/>
+											<Text text="123" wrapping="false"/>
+										</cells>
+									</ColumnListItem>
+								</items>
+							</Table>
+							</uxap:blocks>
+					</uxap:ObjectPageSubSection>
+				</uxap:subSections>
+						</uxap:ObjectPageSection>
+			</uxap:sections>
+         </uxap:ObjectPageLayout>
+</mvc:View>
